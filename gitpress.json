@@ -1,6 +1,6 @@
 {
     "docs"      : ["posts"],
-    "template"    : "pithiness",
+    "template"    : "slate",
     "perpage"   : 10,
     "types"     : {
         "\\.(md||markdown)$"   : "markdown", 
