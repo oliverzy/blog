@@ -4,6 +4,8 @@ Brunch自带了一个简单服务器，如果你的应用仅有前端的话，�
 
 对于快速原型项目，使用一个Java后端就有点太重量级了。这个时候写一个基于NodeJS平台的Express服务器是非常合适的。 nodemon是一个工具能够在代码变化时自动重新启动Express服务器。这篇文章将会指导你如何在brunch中使用nodemon来启动Express服务器。
 
+<!--more-->
+
 假设你的服务器放在server/server.js中，那么你将需要两个命令行分别启动brunch和nodemon，比较麻烦。下面这段简单脚本（nodemon-wrapper.js）能够利用brunch自带的server选项来启动我们自己的服务器。
 ```
 exports.startServer = function(port, path, callback) {
