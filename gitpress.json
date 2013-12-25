@@ -1,0 +1,25 @@
+{
+    "docs"      : ["posts"],
+    "template"    : "default",
+    "perpage"   : 10,
+    "types"     : {
+        "\\.(md||markdown)$"   : "markdown", 
+        "\\.(js||css||json)$"  : "code",
+        "\\.html?$"            : "html",
+        ".*"                   : "text"        
+    },
+    "title"  : "Oliver Zhou's Blog",
+    "description" : "Node.js, AngularJS, SOA, BPM...",
+    "friends"  : [
+        {
+          "name"  : "github",
+          "title"  : "github",
+          "url"  : "http://github.com"          
+        },
+        {
+          "name"  : "gitpress",
+          "title"  : "gitpress",
+          "url"  : "http://gitpress.org"
+        }
+    ] 
+}
