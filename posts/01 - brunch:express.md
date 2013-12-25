@@ -1,4 +1,4 @@
-## Brunch自动重启Express服务器 ##
+## Brunch自动重启Express服务器
 Brunch - <http://brunch.io>是一个轻量级前端构建工具，它主要用来构建HTML5 Web应用。   
 Brunch自带了一个简单服务器，如果你的应用仅有前端的话，那就足够了，但是如果你需要一些后端Restful服务，那么需要写自己的后端了。  
 

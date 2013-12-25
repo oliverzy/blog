@@ -9,7 +9,7 @@
         ".*"                   : "text"        
     },
     "title"  : "Oliver Zhou's Blog",
-    "description" : "Node.js, AngularJS, SOA, BPM...",
+    "description" : "Node.js, AngularJS, SOA, BPM, Spring...",
     "friends"  : [
         {
           "name"  : "github",
