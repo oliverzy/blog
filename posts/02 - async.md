@@ -1,0 +1,45 @@
+对于从其它语言平台转到NodeJS的程序员来讲，异步编程代码模式是一大难题，这篇文章比较三种代码模式。
+###原生 - 疯狂的嵌套回调，糟糕的异常处理
+```
+fs.readdir('.', function (err, files) {
+  if (err)
+    throw new Error(err);
+  var stats = [];
+  files.map(function (file, idx) {
+    fs.stat(file, function (err, stat) {
+      if (err)
+        throw new Error(err);
+      stats[idx] = stat;
+      if (stats.length === files.length)
+        console.log(stats);
+    });
+  })
+})
+```
+
+###Promise/Q - 没有嵌套回调，强大的异常处理
+```
+var readdir = Q.nbind(fs.readdir);
+var stat = Q.nbind(fs.stat);
+readdir('.')
+.then(function (files) {
+  return Q.all(files.map(function (file) {
+    return stat(file);
+  }));
+})
+.done(console.log);
+```
+
+###Promise/Q + ES6 Generator - 异步的代码看上去就像同步的代码一样
+**注意：ES6 Generator只在最新的NodeJS 0.11分支支持**  
+```
+var readdir = Q.nbind(fs.readdir);
+var stat = Q.nbind(fs.stat);
+Q.async(function*() {
+  var files = yield readdir('.');
+  return yield Q.all(files.map(function(file) {
+    return stat(file);
+  }));
+})()
+.done(console.log); 
+```
