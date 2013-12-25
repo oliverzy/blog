@@ -8,7 +8,7 @@
         "\\.html?$"            : "html",
         ".*"                   : "text"        
     },
-    "title"  : "Oliver Zhou's Blog",
+    "title"  : "毓杰Oliver的Blog",
     "description" : "Node.js, AngularJS, SOA, BPM, Spring...",
     "friends"  : [
         {
