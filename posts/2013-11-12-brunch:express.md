@@ -7,6 +7,7 @@ Brunch自带了一个简单服务器，如果你的应用仅有前端的话，�
 <!--more-->
 
 假设你的服务器放在server/server.js中，那么你将需要两个命令行分别启动brunch和nodemon，比较麻烦。下面这段简单脚本（nodemon-wrapper.js）能够利用brunch自带的server选项来启动我们自己的服务器。
+
 ```
 exports.startServer = function(port, path, callback) {
   var child_process = require('child_process');
@@ -26,6 +27,7 @@ exports.startServer = function(port, path, callback) {
 ```
 
 然后在brunch的config.coffee中加入下面一段就行了  
+
 ```
 server:
     path: 'nodemon-wrapper.js'
