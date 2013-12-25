@@ -1,6 +1,6 @@
 {
     "docs"      : ["posts"],
-    "template"    : "tactile",
+    "template"    : "slate",
     "perpage"   : 10,
     "types"     : {
         "\\.(md||markdown)$"   : "markdown", 
