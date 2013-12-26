@@ -10,7 +10,6 @@
     },
     "title"  : "毓杰Oliver的Blog",
     "description" : "Node.js, AngularJS, SOA, BPM, Spring...",
-    "comment"  : {"type":"disqus", "short_name":"oz_blog"},
     "friends"  : [
         {
           "name"  : "github",
