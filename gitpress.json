@@ -1,6 +1,6 @@
 {
     "docs"      : ["posts"],
-    "template"    : "greyshade",
+    "template"    : "default",
     "perpage"   : 10,
     "types"     : {
         "\\.(md||markdown)$"   : "markdown", 
@@ -10,7 +10,7 @@
     },
     "title"  : "毓杰Oliver的Blog",
     "description" : "Node.js, AngularJS, SOA, BPM, Spring...",
-    "comment"  : {"type":"duoshuo", "short_name":"oz_blog"},
+    "comment"  : {"type":"disqus", "short_name":"oz_blog"},
     "friends"  : [
         {
           "name"  : "github",
